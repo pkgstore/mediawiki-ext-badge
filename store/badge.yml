@@ -1,0 +1,31 @@
+user:
+  art:
+    id: 'art'
+    icon: 'fas fa-paint-brush'
+    category: 'user-art-category'
+    content: ''
+    status: ''
+  music:
+    id: 'music'
+    icon: 'fas fa-music'
+    category: 'user-music-category'
+    content: 'user-art-content'
+    status: ''
+  write:
+    id: 'write'
+    icon: 'fas fa-pencil-alt'
+    category: 'user-write-category'
+    content: 'user-write-content'
+    status: ''
+  fursuit:
+    id: 'fursuit'
+    icon: 'fas fa-paw'
+    category: 'user-fursuit-category'
+    content: 'user-fursuit-content'
+    status: ''
+  stream:
+    id: 'stream'
+    icon: 'fas fa-stream'
+    category: 'user-stream-category'
+    content: 'user-stream-content'
+    status: ''

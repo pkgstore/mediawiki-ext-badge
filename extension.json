@@ -1,0 +1,52 @@
+{
+  "name": "MW_EXT_Badge",
+  "version": "1.0.0",
+  "author": [
+    "[https://ihub.to/ iHub TO]",
+    "[https://kitsune.solar/ Kitsune Solar]",
+    "..."
+  ],
+  "url": "https://ihub.to/",
+  "descriptionmsg": "mw-badge-desc",
+  "license-name": "[https://choosealicense.com/licenses/mit/ MIT]",
+  "type": "parserhook",
+  "require": {
+    "MediaWiki": ">= 1.31.0"
+  },
+  "AutoloadClasses": {
+    "MW_EXT_Badge": "MW_EXT_Badge.class.php"
+  },
+  "Hooks": {
+    "ParserFirstCallInit": [
+      "MW_EXT_Badge::onParserFirstCallInit"
+    ],
+    "BeforePageDisplay": [
+      "MW_EXT_Badge::onBeforePageDisplay"
+    ]
+  },
+  "ExtensionMessagesFiles": {
+    "MW_EXT_BadgeMagic": "MW_EXT_Badge.i18n.magic.php"
+  },
+  "MessagesDirs": {
+    "MW_EXT_Badge": [
+      "i18n"
+    ]
+  },
+  "ResourceModules": {
+    "ext.mw.badge.styles": {
+      "styles": [
+        "styles/theme.css"
+      ],
+      "position": "top",
+      "targets": [
+        "desktop",
+        "mobile"
+      ]
+    }
+  },
+  "ResourceFileModulePaths": {
+    "localBasePath": "modules",
+    "remoteExtPath": "MW_EXT_Badge/modules"
+  },
+  "manifest_version": 2
+}
